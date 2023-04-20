@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/profile.css">
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="#" class="activem">Profile</a>
+        <a href="/">Assignments</a>
+        <a href="/login" class="login">Login</a>
+        
+      </div>
+      
+        <div id='wrap'>
+            
+            <div id='content-wrap'>
+                <div style="font-size: 200%;" id="name">Assignment</div> 
+                <div class="wrapper">
+                    <form action="/profile-create" method="post" id="tform" style="width: 100%;">
+                    <input type="file" name="Image" accept="image/*" onChange="changeImg()" id="uploadImage" style='display:none;'>
+                    <input type="text" name="Img" style="display:none;" id="image">
+                    <div class="imgdw">
+                        <img class="add-img" onclick="document.getElementById('uploadImage').click()" src="/data/ass-default.png" id="preview">
+                        <textarea type="text" id="des" name="Des"></textarea></div>
+                    <select id="0"></select>
+                    <input type="submit" text="Submit">
+                    </form>
+                    
+                </div>
+                <div class="wrapper" id="all-participants">
+                   
+                </div>
+            </div>
+        </div>
+
+        <canvas id="canvas" width="106" height="100" style='display:none'>
+    
+        </canvas>
+        
+    <script src="/js/profile.js"></script>
+    <script>
+           tsearch = document.getElementById('searchTop')
+function srchChange() {
+  console.log('change')
+  students = document.getElementsByClassName('student')
+  for (i = 0; i < students.length; i++) {
+    a = students[i]
+    txtValue = a.textContent || a.innerText;
+      filter = tsearch.value.toUpperCase();
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      students[i].parentElement.style.display = "flex";
+    } else {
+      students[i].parentElement.style.display = "none";
+    }
+  }
+
+}
+      </script>
+</body>
+</html>

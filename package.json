@@ -1,0 +1,18 @@
+{
+  "name": "dku-platform",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "ilhan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2",
+    "express-session": "^1.17.2",
+    "mongoose": "^6.1.7",
+    "nodemon": "^2.0.15",
+    "uuid": "^8.3.2"
+  }
+}

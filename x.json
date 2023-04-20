@@ -1,0 +1,36 @@
+{
+    "Users": [
+        {"Id" : "123", "Username" : "Ilhan", "Password" : "12345678", "Type" : "Student" },
+        { "Id" : "321", "Username" : "Profa", "Password" : "12345678", "Type" : "Professor" },
+        { "Id" : "44bb5d51-3ae1-4cbc-8040-eeec47fba00d", "Username" : "Ensiha Velagic", "Password" : "ed835b", "Type" : "Professor"},
+        { "Id" : "285b247f-528a-43c0-9cf6-5dc9eb5d3b84", "Username" : "Agić Sajra", "Password" : "12345678", "Type" : "Student"},
+        { "Id" : "212a4069-5a45-4061-8613-286f98b79578", "Username" : "Alić Hamza", "Password" : "7bdef9", "Type" : "Student"},
+        { "Id" : "24189887-ca2e-41d7-8852-d92824f07739", "Username" : "Bilajac Nedim", "Password" : "a7b6a1", "Type" : "Student"},
+        { "Id" : "9cdc3372-9260-4de3-bf16-e85764729b1c", "Username" : "Bilić Ammar", "Password" : "7f1c21", "Type" : "Student"},
+        { "Id" : "e85ab69f-a271-445b-a071-e9916d1ebc6e", "Username" : "ćatović Anes", "Password" : "9c2b4b", "Type" : "Student"},
+        { "Id" : "4c3773b3-33bc-484c-87a2-b841e8990a2a", "Username" : "Hodžic Faruk", "Password" : "d273d2", "Type" : "Student"},
+        { "Id" : "f6269ab2-a420-4754-bb52-ddab294a42cc", "Username" : "Džirlo Tarik", "Password" : "c7e06a", "Type" : "Student"},
+        { "Id" : "b56de2e2-bf33-463a-a938-a875e978d42b", "Username" : "Ćosovic Džejla", "Password" : "66c126", "Type" : "Student"},
+        { "Id" : "b1232eaf-3bf0-40cf-983f-a3042cdada8a", "Username" : "Huskić Emin", "Password" : "f4533d", "Type" : "Student"},
+        { "Id" : "5a0080fd-182e-49b6-8c22-6dcb9bf32341", "Username" : "Kadrić Faruk", "Password" : "7e734e", "Type" : "Student"},
+        { "Id" : "40f9722a-34e0-4ef8-bd78-05813d3a3ede", "Username" : "Karić Anes", "Password" : "f6c0c7", "Type" : "Student"},
+        { "Id" : "e82606c9-8151-4a50-886b-6fa3b78eec95", "Username" : "Kozić Anadin ", "Password" : "16142d", "Type" : "Student"},
+        { "Id" : "df7aa4eb-20e2-4308-bc5d-a2a2ace9d571", "Username" : "Kreštalica Nejla", "Password" : "3fff97", "Type" : "Student"},
+        { "Id" : "5007f260-57a8-4db9-8caf-b7b0583617ad", "Username" : "Kurtović Tarik", "Password" : "dd367e", "Type" : "Student"},
+        { "Id" : "2305ae27-eaf9-4969-aa09-385c7780b45f", "Username" : "Mahmutović Davud", "Password" : "9c864b", "Type" : "Student"},
+        { "Id" : "5611c50a-6198-4edc-9298-af3b0925b2ec", "Username" : "Maslo Haris", "Password" : "12345678", "Type" : "Student"},
+        { "Id" : "783c8b3c-aff1-4f14-a21a-514f71e926af", "Username" : "Mirić Vedran", "Password" : "f71e59", "Type" : "Student"},
+        { "Id" : "3f579303-2419-40f5-91cc-19686fa78985", "Username" : "Muftić Ilhan", "Password" : "12345678", "Type" : "Student"},
+        { "Id" : "6a9bbd27-80f2-485c-b9e5-dbb4931bfad2", "Username" : "Mujkić Alen", "Password" : "2e5b2a", "Type" : "Student"},
+        { "Id" : "12e58797-67d8-4143-9598-eb45f46c0a18", "Username" : "Mušović Eldar", "Password" : "9a987f", "Type" : "Student"},
+        { "Id" : "adf0e804-02f7-4743-a711-69ef929099df", "Username" : "Pleho Rijad", "Password" : "40d012", "Type" : "Student"},
+        { "Id" : "f6d3f9c5-070b-4075-a2a2-28625215835a", "Username" : "Ruhotina Alma", "Password" : "68b0fc", "Type" : "Student"},
+        { "Id" : "fd2c88b1-7da1-4f6f-8323-dc52b026c28e", "Username" : "Sarajlić Muhamed", "Password" : "31d3c7", "Type" : "Student"},
+        { "Id" : "06c606a1-6e4a-4fe3-8f15-8a9fb7615a39", "Username" : "Salanović Iman", "Password" : "bf64dd", "Type" : "Student"},
+        { "Id" : "0058686d-2a84-4dd4-ae43-1da22d48c855", "Username" : "Šorlija Ajla", "Password" : "51076f", "Type" : "Student"},
+        { "Id" : "3b233678-2b89-484c-bdb1-1be43dce5fe3", "Username" : "Veladžic Seid", "Password" : "800d77", "Type" : "Student"}
+    ], 
+
+    "Students":{}
+
+}

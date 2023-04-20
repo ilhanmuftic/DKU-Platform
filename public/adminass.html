@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <style>
+        table{
+            width: 100%;
+            height: 100%;
+            border: black;
+        }
+
+        td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  cursor: pointer;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+    </style>
+</head>
+<body>
+<input type="text" style="background-color: black;color: #00ff00;width: 100%;height: 10%;" id="console">
+
+<script src="/js/admin.js"></script>
+    <script>
+
+r = new Request("/admin/get-assignments")
+
+fetch(r).then(re=>{re.json().then(logs=>{addAsses(logs)})})
+
+function addAsses(tasses){
+    var asses = `<table>
+                <tr>
+                    <th>Id</th>
+                    <th>Student</th>
+                    <th>Name</th>
+                <th>Hours</th>
+                <th>State</th>
+                <th>Date</th>
+                </tr>`
+        for(ass of tasses){
+            console.log(ass)
+            asses += `<tr onclick="copy('${ass.Id}')"><td>${ass.Id}</td><td>${ass.Student}</td><td>${ass.Name}</td><td>${ass.Hours}</td><td>${ass.State}</td><td>${ass.Info.Date}</td></tr>`
+        }
+
+        asses+="</table>"
+        document.body.append(stringToHTML(asses))
+}
+
+    </script>
+</body>
+</html>

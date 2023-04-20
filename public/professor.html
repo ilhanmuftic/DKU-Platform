@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professor</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="/" class="activem">Professor</a>
+        <a href="/login" class="login">Login</a>
+        <input class='search' id='searchTop' type='text' onchange='srchChange()' placeholder="Search by name">
+      </div>
+         <div id='wrap'>
+
+          <div id='content-wrap'>
+            <span style='font-size:200%;margin-left: auto;margin-right: auto;'>Students</span> 
+              <div class="wrapper" id='all-students'>
+                  
+
+  
+                 
+      
+              </div>
+          </div>
+      </div>
+    <script src="/js/professor.js"></script>
+    <script>
+        tsearch = document.getElementById('searchTop')
+function srchChange() {
+  console.log('change')
+  students = document.getElementsByClassName('student')
+  for (i = 0; i < students.length; i++) {
+    a = students[i]
+    txtValue = a.textContent || a.innerText;
+      filter = tsearch.value.toUpperCase();
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      students[i].parentElement.style.display = "flex";
+    } else {
+      students[i].parentElement.style.display = "none";
+    }
+  }
+
+}
+    </script>
+</body>
+</html>

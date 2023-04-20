@@ -1,0 +1,33 @@
+.add-img{
+    background:grey;
+    width:25%;
+    height:15rem;
+    position:relative;
+    display: grid;
+    place-items: center;
+    color:white;
+    opacity:0.5;
+    font-size:300%;
+    cursor: pointer;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-bottom: 1.5%;
+}
+
+img{
+    width:25%;
+    height:15rem;
+    position:relative;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-bottom: 1.5%;
+}
+
+#fileList{
+    display: flex;
+    position: relative;
+    min-height: 15rem;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+}

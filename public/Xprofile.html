@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/profile.css">
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="/" class="activem">Profile</a>
+        <a href="/login" class="login">Login</a>
+        
+      </div>
+      
+        <div id='wrap'>
+            
+            <div id='content-wrap'>
+                <div style="font-size: 200%;">Assignment</div> 
+                <div class="wrapper">
+                    <form action="/profile-create" method="post" id="tform">
+                    <input type="file" name="Images" accept="image/*" multiple="" onChange="makeFileList()" id="uploadImage" style='visibility:hidden'>
+                    <div id="fileList">
+                        <div class="add-img" onclick="document.getElementById('uploadImage').click()">+</div>
+                    </div>
+                    <input type="submit" text="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        
+    <script src="/js/profile.js"></script>
+    <script>
+   
+      </script>
+</body>
+</html>

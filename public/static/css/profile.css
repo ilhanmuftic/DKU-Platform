@@ -1,0 +1,57 @@
+.add-img{
+    background:grey;
+    min-width: 10%;
+    max-width:25%;
+    height:15rem;
+    position:relative;
+    display: grid;
+    place-items: center;
+    color:white;
+    opacity:1.0;
+    font-size:300%;
+    cursor: pointer;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-bottom: 1.5%;
+}
+
+#des{
+    width: 70%;
+    height: 15rem;
+    position: relative;
+    display: grid;
+    margin: 0 0 0 0;
+    text-align: left;
+    padding: 1% 1%;
+    max-width: 70%;
+    max-height: 15rem;
+    resize: none;
+}
+
+.imgdw{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+}
+
+#add-participant{
+    margin-top: 0%;
+}
+
+
+@media screen and (max-width: 800px) {
+    .add-img{
+        width: 95%;
+        max-width:95%;
+    }
+
+    .imgdw{
+        flex-direction: column;
+    }
+
+    #des{
+        width: 92.5%;
+        max-width: 92.5%;
+        margin-left: 2.5%;
+    }
+}

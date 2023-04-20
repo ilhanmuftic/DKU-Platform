@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignments</title>
+    <link rel="stylesheet" href="/css/ass.css">
+</head>
+<body>
+    <form action="/create-assignment" method="post" onkeydown="return event.key != 'Enter';">
+    <div class="gas">
+        
+            <div id="s1">
+               <span>Assignment Name</span> 
+               <br/>
+               <br/>
+               <br/>
+                <input autocomplete="off" name="Name" type="text"  required>
+            </div>
+            <div id="s2" class="not">
+                <span>Date</span>
+                <br/>
+               <br/>
+               <br/>
+                <input name="Date" type="date" value="yyyy-MM-dd" >
+            </div>
+    
+            <div id="s3" class="not">
+                <span>Description </span> 
+                <br/>
+               <br/>
+               <br/>
+               <textarea rows = "5" cols = "50" name = "Description" style="text-align: left;resize: none;"></textarea>
+            </div>
+    
+            <div id="s4" class="not">
+                <span>Hours:</span>
+                <br/>
+               <br/>
+               <br/>
+                <input name="Hours" type="number" >
+            </div>
+            
+           <div id="s5" class="not">
+            
+            <input class="createBtn s" type="submit" value="Submit">
+        </div>
+        
+    </div>
+</form>
+
+<button class="createBtn prev" onclick="prev()">&#8592;</button>
+<button class="createBtn" id="next" onclick="next()">&#8594;</button>
+
+    
+    <script src="/js/assignments.js">
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <style>
+        table{
+            width: 100%;
+            height: 100%;
+            border: black;
+        }
+
+        td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  cursor: pointer;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+    </style>
+</head>
+<body>
+<input type="text" style="background-color: black;color: #00ff00;width: 100%;height: 10%;" id="console">
+
+<script src="/js/admin.js"></script>
+    
+<script>
+
+            r = new Request("/admin/get-users")
+
+            fetch(r).then(re=>{re.json().then(users=>{addUsers(users)})})
+
+            function addUsers(tusers){
+                var users = `<table>
+                            <tr>
+                                
+                                <th>Id</th>
+                            <th>Username</th>
+                            <th>Password</th>
+                            <th>Type</th>
+                            
+                            </tr>`
+                    for(user of tusers){
+                        console.log(user)
+                        users += `<tr onclick="copy('${user.Id}')"><td>${user.Id}</td><<td>${user.Username}</td><td>${user.Password}</td><td>${user.Type}</td>/tr>`
+                    }
+
+                    users+="</table>"
+                    document.body.append(stringToHTML(users))
+            }
+
+
+    </script>
+</body>
+</html>
